@@ -25,11 +25,20 @@ export default function Visa(){
 
   return (<main className="container py-16">
     <h1 className="text-3xl md:text-4xl font-bold mb-6">Visa Check</h1>
-    <div className="grid md:grid-cols-4 gap-3">
-      <input placeholder="Nationality" value={nationality} onChange={e=>setNationality(e.target.value)} className="rounded-2xl border px-3 py-2"/>
-      <input placeholder="Destination country" value={destination} onChange={e=>setDestination(e.target.value)} className="rounded-2xl border px-3 py-2"/>
-      <input placeholder="Purpose (tourism, work)" value={purpose} onChange={e=>setPurpose(e.target.value)} className="rounded-2xl border px-3 py-2"/>
-      <button onClick={onCheck} className="btn btn-primary">Check requirements</button>
+    <div className="grid md:grid-cols-4 gap-3 items-end">
+      <div className="grid gap-1">
+        <label htmlFor="nationality" className="text-sm font-medium">Nationality</label>
+        <input id="nationality" placeholder="Nationality" value={nationality} onChange={e=>setNationality(e.target.value)} className="rounded-2xl border px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"/>
+      </div>
+      <div className="grid gap-1">
+        <label htmlFor="destination" className="text-sm font-medium">Destination</label>
+        <input id="destination" placeholder="Destination country" value={destination} onChange={e=>setDestination(e.target.value)} className="rounded-2xl border px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"/>
+      </div>
+      <div className="grid gap-1">
+        <label htmlFor="purpose" className="text-sm font-medium">Purpose</label>
+        <input id="purpose" placeholder="Purpose (tourism, work)" value={purpose} onChange={e=>setPurpose(e.target.value)} className="rounded-2xl border px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"/>
+      </div>
+      <button onClick={onCheck} className="btn btn-primary h-[42px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">Check requirements</button>
     </div>
     {result && (
       <div className="card mt-6">
