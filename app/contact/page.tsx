@@ -6,10 +6,19 @@ export default function Page(){
       <div className="card">
         <div className="font-semibold mb-2">Send a message</div>
         <div className="grid gap-3">
-          <input placeholder="Your name" className="rounded-2xl border px-3 py-2"/>
-          <input type="email" placeholder="Email" className="rounded-2xl border px-3 py-2"/>
-          <textarea placeholder="How can we help?" className="rounded-2xl border px-3 py-2 h-28"></textarea>
-          <button className="btn btn-primary">Submit</button>
+          <div className="grid gap-1">
+            <label htmlFor="name" className="text-sm font-medium">Name</label>
+            <input id="name" placeholder="Your name" className="rounded-2xl border px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"/>
+          </div>
+          <div className="grid gap-1">
+            <label htmlFor="email" className="text-sm font-medium">Email</label>
+            <input id="email" type="email" placeholder="Email" className="rounded-2xl border px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"/>
+          </div>
+          <div className="grid gap-1">
+            <label htmlFor="message" className="text-sm font-medium">Message</label>
+            <textarea id="message" placeholder="How can we help?" className="rounded-2xl border px-3 py-2 h-28 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"></textarea>
+          </div>
+          <button className="btn btn-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">Submit</button>
         </div>
       </div>
       <div className="card">
