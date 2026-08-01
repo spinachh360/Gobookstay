@@ -1,0 +1,3 @@
+## 2026-08-01 - Form Accessibility Pattern
+**Learning:** Found multiple forms in the codebase (Contact and Visa pages) that relied solely on `placeholder` attributes without semantic `<label>` elements or visible focus states for keyboard navigation. This pattern violates WCAG accessibility guidelines and makes it difficult for screen readers and keyboard users to interact with the forms.
+**Action:** Always wrap inputs in semantic `<label>` elements linked via `htmlFor`, and add explicit `focus-visible` ring styling to inputs and buttons to ensure clear visual feedback during keyboard navigation.
