@@ -1,0 +1,15 @@
+
+> go-book-stay@2.0.0 dev /app
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1710ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 5.4s (462 modules)
+ GET /contact 200 in 5845ms
+ ○ Compiling /visa ...
+ ✓ Compiled /visa in 682ms (468 modules)
+ GET /visa 200 in 892ms
