@@ -1,0 +1,3 @@
+## 2024-08-02 - Form Inputs and Focus States
+**Learning:** Found a recurring app-specific anti-pattern where inputs rely entirely on `placeholder` text (no explicit `<label>`) and lack clear focus styles (`outline-none` without alternative rings), breaking keyboard accessibility and screen reader navigation.
+**Action:** When building or updating forms in this Next.js app, always wrap inputs in a grid/flex container paired with a semantic `<label htmlFor="...">`, and append `focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand)]` to all interactive fields and buttons.
