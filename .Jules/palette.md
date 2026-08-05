@@ -1,0 +1,3 @@
+## 2024-08-16 - Accessible Form Inputs and Focus Indicators
+**Learning:** Found that the app's initial forms relied solely on `placeholder` attributes without semantic `<label>` tags or explicit `<form>` wrappers, which is a major accessibility barrier for screen reader users and fails to properly associate error states. Additionally, the default focus rings were insufficient for keyboard navigation.
+**Action:** Always wrap form inputs in semantic `<form>` tags. Use explicit `<label>` tags linked to inputs via `htmlFor`/`id`, add `required` attributes and visual indicators where appropriate, and consistently apply `focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand)]` classes for clear keyboard navigation feedback.
