@@ -1,0 +1,3 @@
+## 2024-11-20 - Semantic labels and focus indicators are necessary for good UX
+**Learning:** Relying solely on `placeholder` attributes without proper semantic `<label>` tags linked via `htmlFor` makes inputs significantly less accessible and clear for users, particularly screen reader users. Additionally, relying on default focus behaviors without explicitly providing `focus-visible` styles makes keyboard navigation harder.
+**Action:** When building forms, always include semantic labels explicitly linked to inputs and ensure inputs have prominent `focus-visible` rings so that keyboard users easily know their current location.
